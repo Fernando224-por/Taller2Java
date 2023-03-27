@@ -95,7 +95,8 @@ public class PPT implements Juego {
                 break;
                 case 2:
                 System.out.println("Bienvenido al simulador carisello");
-                System.out.println("Escoga 1 si cree que la moneda caera cara, escoja 2 si cree que la moneda caera sello");
+            while (antempWhile==6) {
+                   System.out.println("Escoga 1 si cree que la moneda caera cara, escoja 2 si cree que la moneda caera sello");
                 dataCaptured=dates.nextInt();
                 valueRandom = (int)Math.floor(Math.random()*2+1);
                 if (dataCaptured==valueRandom){
@@ -110,6 +111,7 @@ public class PPT implements Juego {
                     antempWhile=dates.nextInt();
                     i++;
                 }
+            }
                 break;
         
             default:
